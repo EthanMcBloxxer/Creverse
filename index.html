@@ -1,0 +1,47 @@
+---
+---
+
+<!doctype html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<style>
+				* {
+					box-sizing: border-box;
+				}
+
+				body {
+					margin: 0;
+					font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI","Calibri","Helvetica Neue",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+					font-size: 1rem;
+					background-color: #0c0c0c;
+				}
+
+				.content {
+					position: fixed;
+					bottom: 0;
+					background: rgba(0, 0, 0, 0);
+					color: #f1f1f1;
+					width: 100%;
+					padding: 2.5rem;
+				}
+
+				#video {
+					position: fixed;
+					min-width: 100%;
+					min-height: 100%;
+				}
+		</style>
+	</head>
+
+	<body>
+		<video autoplay muted loop id="video" poster="{{ '/console.gif' | relative_url }}">
+			<source src="{{ '/console.mp4' | relative_url }}" type="video/mp4">
+		</video>
+
+		<div class="content">
+			<h1>Creverse</h1>
+			<p>Creverse (Console Reverse) is a C# .NET Framework console application that reverses the input and copies it to your clipboard. <a href="https://github.com/EthanMcBloxxer/Creverse/releases/download/1.0/Creverse.exe" style="color: inherit;">Download v1.0 now from GitHub</a>.</p>
+		</div>
+	</body>
+</html>
